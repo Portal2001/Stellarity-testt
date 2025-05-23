@@ -2,13 +2,21 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "minecraft:chests/end_city_treasure"
+          "type": "minecraft:item",
+          "name": "minecraft:elytra",
+          "weight": 1,
+          "quality": 1
         }
-      ]
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1,
+        "min": 1
+      }
     }
-  ]
+  ],
+  "random_sequence": "minecraft:chests/end_city_treasure"
 }
